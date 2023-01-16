@@ -26,6 +26,16 @@ public:
 	void SetRack(int rack) { m_rack = rack; }
 	void SetSlot(int slot) { m_slot = slot; }
 	
+	void SetAreaList(QVector<QString>&areaList) { m_AreaList = areaList; }
+	void SetDBNumList(QVector<QString>&dbnumList) { m_AreaNumList = dbnumList; }
+	void SetDataTypeList(QVector<QString>&datatypeList) { m_DataTypeList = datatypeList; }
+	void SetDataAddrList(QVector<int>&dataTypeList) { m_DataAddrList = dataTypeList; }
+
+	QVector<QString> getAreaList() { return  m_AreaList; }
+	QVector<QString> getDBNumList() { return  m_AreaNumList ; }
+	QVector<QString> getDataTypeList() { return  m_DataTypeList ; }
+	QVector<int> getDataAddrList() { return m_DataAddrList; }
+	
 	QString GetAreadString(int id);
 
 	static ConfFile * GetInstance();
@@ -58,8 +68,11 @@ private:
 	*/
 	//QVector<int> m_S7AreaList;			//s7 块列表
 	//QVector<int> m_S7DataTypeList;      // S7 快列表中变量的类型
-	QMap<int, int> m_S7DataList;       // 存放 地址和 数据类型的 map表
-	QMap<QString, QMap<int, int>> m_AreadInfoMap; //存放块类型  和地址的map表
+
+	QVector<QString> m_AreaList;
+	QVector<QString> m_AreaNumList;
+	QVector<QString> m_DataTypeList;
+	QVector<int>     m_DataAddrList;
 	
 	static ConfFile * m_confileInstance;
 

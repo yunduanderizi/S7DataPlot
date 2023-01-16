@@ -35,7 +35,8 @@ ConfFile::ConfFile()
 
 ConfFile::~ConfFile()
 {
-	WriteConfFile();
+	delete settings;
+	//WriteConfFile();
 }
 ConfFile *ConfFile::GetInstance()
 {
@@ -56,13 +57,34 @@ void ConfFile::ReadConfFile()
 	m_slot = settings->value("slot").toInt();
 	settings->endGroup();
 
-	settings->beginGroup("Area");
+	int arraysize= settings->beginReadArray("AreaInofs");
+	m_AreaList.clear();
+	m_AreaNumList.clear();
+	m_DataTypeList.clear();
+	m_DataAddrList.clear();
+	for (int i = 0; i < arraysize; ++i) {
 
-	settings->endGroup();
+		QString AreaName;
+		QString AreaNum;
+		QString DataType;
+		int DataAddr;
+		settings->setArrayIndex(i);
+		AreaName =settings->value("Area").toString();
+		AreaNum = settings->value("AreaNum").toString();
+		DataType = settings->value("DataType").toString();
+		DataAddr = settings->value("DataAddr").toInt();
+		m_AreaList.append(AreaName);
+		m_AreaNumList.append(AreaNum);
+		m_DataTypeList.append(DataType);
+		m_DataAddrList.append(DataAddr);
+	}
+	settings->endArray();
+
 }
 
 void ConfFile::WriteConfFile()
 {
+
 	settings->beginGroup("Main");
 	settings->setValue("serverip", m_serverip);
 	settings->setValue("serverpot", m_serverpot);
@@ -70,20 +92,21 @@ void ConfFile::WriteConfFile()
 	settings->setValue("slot", m_slot);
 	settings->endGroup();
 
-	settings->beginGroup("AreaList");
-	/*			
-			S7AreaPE 0x81 Process Inputs.
-			S7AreaPA 0x82 Process Outputs.
-			S7AreaMK 0x83 Merkers.
-			S7AreaDB 0x84 DB
-	*/
-	//QMap<QString, QMap<int, int>>::Iterator itr = m_AreadInfoMap.begin();
-	//QList<QString> ArearsName;
-	//
+
+
+	
+	settings->beginWriteArray("AreaInofs");
+	for (int i = 0; i < m_AreaList.size(); ++i) {
+		
+		settings->setArrayIndex(i);
+		settings->setValue("Area",m_AreaList[i]);
+		settings->setValue("AreaNum",m_AreaNumList[i]);
+		settings->setValue("DataType",m_DataTypeList[i]);
+		settings->setValue("DataAddr",m_DataAddrList[i]);
+	}
+	settings->endArray();
 	
 	
-	
-	settings->endGroup();
 }
 QString ConfFile::GetAreadString(int id)
 {

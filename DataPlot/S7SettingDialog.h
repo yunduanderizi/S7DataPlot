@@ -13,7 +13,7 @@ class S7SettingDialog : public QWidget
 public:
 	S7SettingDialog(QWidget *parent = nullptr);
 	~S7SettingDialog();
-
+	void GetAllinfo();
 private:
 	Ui::S7SettingDialogClass ui;
 	
@@ -21,7 +21,17 @@ private:
 	QItemSelectionModel *theSelection;//Item选择模型
 	QDBTypeComboBoxDelegate AreaTypeDelegate;  //类型选择
 	QDataTypeComboBoxDelegate DataTypeDelegate;  //类型选择
+	
 
+	QString m_ip;
+	ushort m_port;
+	int m_rack;
+	int m_slot;
+
+	QVector<QString> m_AreaList;
+	QVector<QString> m_AreaNumList;
+	QVector<QString> m_DataTypeList;
+	QVector<int>     m_DataAddrList;  
 private slots:
 	void on_btn_save();
 	void on_btn_Cancel();
@@ -30,5 +40,5 @@ private slots:
 	void on_add_line();
 	void on_del_line();
 	void on_currentChanged(const QModelIndex &current, const QModelIndex &previous);
-
+	void RefreshConf();
 };
