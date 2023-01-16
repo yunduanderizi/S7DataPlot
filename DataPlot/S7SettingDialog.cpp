@@ -55,6 +55,7 @@ void S7SettingDialog::RefreshConf()
 	
 	for (int i = 0; i < m_AreaList.size(); i++)
 	{
+		aItemList.clear();
 		QStandardItem   *aItem;
 		QString str;
 
@@ -66,12 +67,12 @@ void S7SettingDialog::RefreshConf()
 		aItemList << aItem;   //添加到容器
 		aItem = new QStandardItem(QString::number(m_DataAddrList[i])); //创建Item
 		aItemList << aItem;   //添加到容器
-		aItem = new QStandardItem("0"); //创建Item
+		aItem = new QStandardItem(""); //创建Item
 		aItemList << aItem;   //添加到容器
 		theModel->insertRow(theModel->rowCount(), aItemList); //插入一行，需要每个Cell的Item
-		QModelIndex curIndex = theModel->index(theModel->rowCount() - 1, 0);//创建最后一行的ModelIndex
-		theSelection->clearSelection();
-		theSelection->setCurrentIndex(curIndex, QItemSelectionModel::Select);
+		//QModelIndex curIndex = theModel->index(theModel->rowCount() - 1, 0);//创建最后一行的ModelIndex
+		//theSelection->clearSelection();
+		//theSelection->setCurrentIndex(curIndex, QItemSelectionModel::Select);
 	}
 	
 	//QModelIndex curIndex = theModel->index(theModel->rowCount() - 1, 0);//创建最后一行的ModelIndex
