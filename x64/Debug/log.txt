@@ -1,0 +1,17 @@
+Debug: 16:33:03:433: e:\qtproject\dataplot\dataplot\main.cpp: 44: this is test
+Debug: 20:43:09:725: e:\qtproject\dataplot\dataplot\main.cpp: 44: this is test
+Debug: 20:44:40:470: e:\qtproject\dataplot\dataplot\main.cpp: 44: this is test
+Debug: 20:47:59:893: e:\qtproject\dataplot\dataplot\main.cpp: 44: this is test
+Debug: 11:24:50:848: e:\qtproject\dataplot\dataplot\conffile.cpp: 27: ?????????
+Debug: 11:26:19:371: e:\qtproject\dataplot\dataplot\conffile.cpp: 27: ?????????
+Debug: 11:27:07:443: e:\qtproject\dataplot\dataplot\conffile.cpp: 22: ???????
+Debug: 11:27:56:621: e:\qtproject\dataplot\dataplot\conffile.cpp: 22: ???????
+Debug: 11:28:13:428: e:\qtproject\dataplot\dataplot\conffile.cpp: 22: ???????
+Debug: 13:29:44:530: e:\qtproject\dataplot\dataplot\conffile.cpp: 24: ???????
+Debug: 13:40:05:168: e:\qtproject\dataplot\dataplot\conffile.cpp: 24: ???????
+Debug: 14:50:07:621: e:\qtproject\dataplot\dataplot\conffile.cpp: 24: ???????
+Debug: 14:51:09:429: e:\qtproject\dataplot\dataplot\conffile.cpp: 24: ???????
+Debug: 14:51:22:962: e:\qtproject\dataplot\dataplot\conffile.cpp: 24: ???????
+Debug: 15:32:58:669: e:\qtproject\dataplot\dataplot\conffile.cpp: 24: ???????
+Debug: 15:34:22:567: e:\qtproject\dataplot\dataplot\conffile.cpp: 24: ???????
+Debug: 15:41:38:503: e:\qtproject\dataplot\dataplot\conffile.cpp: 24: ???????

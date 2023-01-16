@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DataPlotClass</class>
+ <widget class="QMainWindow" name="DataPlotClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1106</width>
+    <height>867</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>DataPlot</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout"/>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1106</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>控制</string>
+    </property>
+    <addaction name="actionBegin"/>
+    <addaction name="actionStop"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>配置</string>
+    </property>
+    <addaction name="actionS7Setting"/>
+    <addaction name="actionMODBUSSetting"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionBegin">
+   <property name="icon">
+    <iconset resource="DataPlot.qrc">
+     <normaloff>:/DataPlot/icons/start.png</normaloff>:/DataPlot/icons/start.png</iconset>
+   </property>
+   <property name="text">
+    <string>开始</string>
+   </property>
+   <property name="toolTip">
+    <string>开始采集</string>
+   </property>
+  </action>
+  <action name="actionStop">
+   <property name="icon">
+    <iconset resource="DataPlot.qrc">
+     <normaloff>:/DataPlot/icons/stop.png</normaloff>:/DataPlot/icons/stop.png</iconset>
+   </property>
+   <property name="text">
+    <string>停止</string>
+   </property>
+   <property name="toolTip">
+    <string>停止采集</string>
+   </property>
+  </action>
+  <action name="actionS7Setting">
+   <property name="icon">
+    <iconset resource="DataPlot.qrc">
+     <normaloff>:/DataPlot/icons/设置 (1).png</normaloff>:/DataPlot/icons/设置 (1).png</iconset>
+   </property>
+   <property name="text">
+    <string>S7</string>
+   </property>
+   <property name="toolTip">
+    <string>S7设置</string>
+   </property>
+  </action>
+  <action name="actionMODBUSSetting">
+   <property name="icon">
+    <iconset resource="DataPlot.qrc">
+     <normaloff>:/DataPlot/icons/设置.png</normaloff>:/DataPlot/icons/设置.png</iconset>
+   </property>
+   <property name="text">
+    <string>MODBUS</string>
+   </property>
+   <property name="toolTip">
+    <string>MODBUS设置</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="DataPlot.qrc"/>
+ </resources>
+ <connections/>
+</ui>

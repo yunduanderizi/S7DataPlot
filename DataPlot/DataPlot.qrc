@@ -1,0 +1,74 @@
+<RCC>
+    <qresource prefix="/DataPlot">
+        <file>icons/Cii1.ico</file>
+        <file>icons/Cii2.ico</file>
+        <file>icons/Cii3.ico</file>
+        <file>icons/Cii4.ico</file>
+        <file>icons/Cii5.ico</file>
+        <file>icons/Cii6.ico</file>
+        <file>icons/Cii7.ico</file>
+        <file>icons/Cii8.ico</file>
+        <file>icons/Cii9.ico</file>
+        <file>icons/Cii10.ico</file>
+        <file>icons/Cii11.ico</file>
+        <file>icons/Cii12.ico</file>
+        <file>icons/Cii13.ico</file>
+        <file>icons/Cii14.ico</file>
+        <file>icons/Cii15.ico</file>
+        <file>icons/Cii16.ico</file>
+        <file>icons/Cii17.ico</file>
+        <file>icons/Cii18.ico</file>
+        <file>icons/Cii19.ico</file>
+        <file>icons/Cii20.ico</file>
+        <file>icons/Cii21.ico</file>
+        <file>icons/ICP (1).png</file>
+        <file>icons/pause.png</file>
+        <file>icons/Splash.png</file>
+        <file>icons/start.png</file>
+        <file>icons/stop.png</file>
+        <file>icons/参数.png</file>
+        <file>icons/打开 (1).png</file>
+        <file>icons/打开.png</file>
+        <file>icons/打开文件 (1).png</file>
+        <file>icons/打开文件.png</file>
+        <file>icons/打开文件夹.png</file>
+        <file>icons/打印 (1).png</file>
+        <file>icons/打印.png</file>
+        <file>icons/点火.png</file>
+        <file>icons/堆积折现图.png</file>
+        <file>icons/多维分析_折现图_选中颜色.png</file>
+        <file>icons/计算 (1).png</file>
+        <file>icons/计算.png</file>
+        <file>icons/开始 (1).png</file>
+        <file>icons/开始.png</file>
+        <file>icons/启动 (1).png</file>
+        <file>icons/启动 (2).png</file>
+        <file>icons/启动.png</file>
+        <file>icons/扫描.png</file>
+        <file>icons/删除测量参数.png</file>
+        <file>icons/设置 (1).png</file>
+        <file>icons/设置.png</file>
+        <file>icons/数据校准-激活.png</file>
+        <file>icons/停止 (1).png</file>
+        <file>icons/停止 (2).png</file>
+        <file>icons/停止 (3).png</file>
+        <file>icons/停止.png</file>
+        <file>icons/网络设置.png</file>
+        <file>icons/新建 (1).png</file>
+        <file>icons/新建 (2).png</file>
+        <file>icons/新建.png</file>
+        <file>icons/新建测量参数.png</file>
+        <file>icons/新建任务_新增新建操作_jurassic.png</file>
+        <file>icons/新建图件_新增新建操作_jurassic.png</file>
+        <file>icons/信息.png</file>
+        <file>icons/修改测量参数.png</file>
+        <file>icons/选择.png</file>
+        <file>icons/仪器控制 (1).png</file>
+        <file>icons/仪器控制 (2).png</file>
+        <file>icons/仪器控制 (3).png</file>
+        <file>icons/仪器控制 (4).png</file>
+        <file>icons/仪器控制.png</file>
+        <file>icons/预约点火.png</file>
+        <file>icons/重置.png</file>
+    </qresource>
+</RCC>

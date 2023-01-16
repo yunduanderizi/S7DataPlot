@@ -1,0 +1,9 @@
+﻿  PlotChart.cpp
+  S7Communication.cpp
+  snap7.cpp
+  DataPlot.cpp
+  main.cpp
+  qrc_DataPlot.cpp
+  moc_DataPlot.cpp
+  moc_PlotChart.cpp
+LINK : fatal error LNK1104: 无法打开文件“snap7.lib”
