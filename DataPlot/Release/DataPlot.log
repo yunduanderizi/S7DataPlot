@@ -1,9 +1,0 @@
-﻿  PlotChart.cpp
-  S7Communication.cpp
-  snap7.cpp
-  DataPlot.cpp
-  main.cpp
-  qrc_DataPlot.cpp
-  moc_DataPlot.cpp
-  moc_PlotChart.cpp
-  DataPlot.vcxproj -> E:\qtProject\DataPlot\Release\DataPlot.exe
